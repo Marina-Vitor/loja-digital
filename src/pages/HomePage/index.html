@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amari Folheados</title>
+  <link rel="stylesheet" href="/src/css/cod.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="header">
+    
+        <div>
+            <img class="imglogo" src="/src/assets/AMARIGOLD.png">
+        </div>
+        <div class="search-container">
+            <form action="/products" method="GET" onsubmit="return validateSearch()">
+                <input type="text" class="inputbusca" name="search" id="search-input" placeholder="Pesquisar produto..." required>
+                <button type="submit" class="search-icon" style="background: none; border: none; cursor: pointer;">
+                    🔍
+                </button>
+                <button type="submit" class="search-button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="cadastro">
+            <a href="cadastro.html" class="cadastro-link">Cadastra-se</a>
+        </div>
+        <div>
+            <button class="buttonentrar"> Entrar </button>
+        </div>
+        <div>
+            carrinho de compra
+        </div>
+
+    </header>
+    <div style="background-color: #501960; color: white; font-size: 0.7rem; padding: 0.5rem;">
+        <nav class="main-menu">
+            HOME
+            - PRODUTOS
+            - CATEGORIAS
+            - MEUS PEDIDOS
+          </nav>
+    </div>
+    
+    <main class="content">
+      <div class="itemhome">
+        <div style="color: #501960;">Melhores ofertas!</div><br><br>
+        <div><p class="textohome">Queima de <br>Estoque Amari</p></div><br><br>
+        <div>
+            <a href="/products" 
+            style="background-color: #501960; border-radius: 8px; width: 20rem; padding: 0.5rem; color:white;" 
+            class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+        <div>
+            <div><p>® Amari Folheados 2024 </p></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+    </footer>
+  </div>
+  <script src="index.js"></script>
+  <script>
+    function validateSearch() {
+        const searchInput = document.getElementById('search-input');
+        if (searchInput.value.trim() === '') {
+            alert('Por favor, insira um termo para buscar.');
+            return false; // Impede o envio do formulário
+        }
+        return true; // Permite o envio do formulário
+    }
+  </script>
+</body>
+</html>

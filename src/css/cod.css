@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    border: 2px #ccc;
+    background: white;
+  }
+  
+  .header, .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: #501960;
+    color: white;
+    text-align: center;
+  }
+
+.itemheader{
+display: flex;
+}
+  
+.imglogo{
+width: 200px;
+height: 80px;
+
+}
+
+.buttonentrar{
+    background-color: #501960;
+    border-color: white;
+    border-radius: 8px;
+    color:white;
+    font-size: 1.2rem;
+    width: 114px;
+    height: 40px;
+}
+
+  .search-container {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .inputbusca {
+    width: 100%;
+    padding: 10px 40px 10px 15px; /* Espaço para a lupa */
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 25px; /* Bordas arredondadas */
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .inputbusca:focus {
+    border-color: #501960; /* Destaque ao focar */
+  }
+
+  /* Estilização da lupa */
+.search-icon {
+    position: absolute;
+    top: 30%;
+    right: 15px; /* Distância da borda direita */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #dddddd;
+    pointer-events: none; /* Ignorar cliques na lupa */
+  }
+
+.cadastro{
+    display: flex;
+    align-items: center;
+
+}
+ .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px  #ccc;
+  }
+  
+  .footer {
+    border-top: 2px  #ccc;
+    background-color:#1C1C1C;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+.itemhome{
+display: flex; 
+flex-direction: column; 
+margin-right: 10rem;  
+font-size: 2rem;   
+}
+
+.textohome{
+    font-size: 4rem;
+}
+  
+  
